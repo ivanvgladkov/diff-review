@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script src="jquery.min.js"></script>
+    <script src="LineReader.js"></script>
+    <script src="Models.js"></script>
+    <script src="Parser.js"></script>
+    <script src="Formatter.js"></script>
+    <script src="main.js"></script>
+
+    <style>
+        pre {
+            margin: 0;
+            padding: 0;
+            font-size: 10px;
+
+            white-space: pre-wrap;       /* Since CSS 2.1 */
+            white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            max-width: 850px;
+        }
+        table {
+            width: 100%;
+            border-spacing: 0;
+        }
+
+        table td {
+            vertical-align: top;
+        }
+        .added {
+            color: #fff;
+            background-color: #025f02;
+        }
+        .removed {
+            color: #fff;
+            background-color: #b90606;
+        }
+        .line-num {
+            font-size: 10px;
+            font-family: monospace;
+            color: #888;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <input type="file" class="js-upload-file-input">
+
+    <div class="js-result-container"></div>
+
+</body>
+</html>
